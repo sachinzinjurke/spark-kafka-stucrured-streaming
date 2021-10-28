@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Inventory",
+  "namespace": "com.example.avro.pojo",
+  "fields": [
+    {"name": "inventoryId","type":"string"},
+    {"name": "inventoryVersion","type": ["int", "null"], "default": null},
+    {"name": "processedTs","type": "long"},
+    {"name": "source","type": "string"},
+    {"name": "inputSystemIsac","type": "string"},
+    {"name": "domainIsac","type": "string"},
+    {"name": "messageType","type": "string" },
+    {"name": "status","type": ["string", "null"], "default": null}
+  ]
+}
