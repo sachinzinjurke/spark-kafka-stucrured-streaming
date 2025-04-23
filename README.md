@@ -30,3 +30,12 @@ bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic
 
 bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
 
+# To run spark streaming locally, we always face problems with the winutils utility and its version.
+
+1. Download the winutils version same as spark version you are using.
+2. Set env varibale for winutils till path e.g. C:\winutils
+3. Set HADOOP_HOME Env variable with this path: C:\winutils
+4. Create bin folder under the C:\winutils and copy 2 jars from downloded hadoop distribution to bin.
+winutils
+hadoop.dll
+
