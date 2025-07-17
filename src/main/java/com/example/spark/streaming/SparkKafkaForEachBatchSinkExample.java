@@ -1,5 +1,7 @@
 package com.example.spark.streaming;
 
+import com.example.spark.streaming.custom.CustomBatchWriter;
+import com.example.spark.streaming.query.CustomQueryListener;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.sql.Dataset;
@@ -12,7 +14,7 @@ import org.apache.spark.sql.streaming.Trigger;
 
 import java.util.concurrent.TimeoutException;
 
-public class SparkKafkaStucturedStreamingExample {
+public class SparkKafkaForEachBatchSinkExample {
 
 
     public static void main(String[] args) throws StreamingQueryException, TimeoutException {
@@ -27,6 +29,11 @@ public class SparkKafkaStucturedStreamingExample {
         spark.conf().set("spark.sql.streaming.fileSource.log.cleanupDelay", "4");
         spark.conf().set("spark.sql.streaming.minBatchesToRetain",2);
 
+        /*
+        *  Adding Spark Streaming Query Listener
+        */
+
+        spark.streams().addListener(new CustomQueryListener());
 
         Dataset<Row> rawData = spark.readStream()
                 .format("kafka")
@@ -41,10 +48,11 @@ public class SparkKafkaStucturedStreamingExample {
 
         StreamingQuery query = valueStream
                 .writeStream()
-                .format("console")
+                //.foreachBatch(new CustomBatchWriter())
+                .foreachBatch(new CustomBatchWriter())
                 .outputMode(OutputMode.Append())
                 .trigger(Trigger.ProcessingTime("10 seconds"))
-                .option("checkpointLocation", "C:\\tools\\checkpoint\\helloworld")
+                .option("checkpointLocation", "C:\\tools\\checkpoint\\forEachBatch")
                 .start();
 
         query.awaitTermination();

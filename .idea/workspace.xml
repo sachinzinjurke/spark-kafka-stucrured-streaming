@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f8dbbb9-cf12-4c17-a31c-c8094d5b3b48" name="Default Changelist" comment="" />
+    <list default="true" id="4f8dbbb9-cf12-4c17-a31c-c8094d5b3b48" name="Default Changelist" comment="Adding working example for spark stuctured streaming with local kafka set up .. set up instructions are in read me file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/KafkaWindowStreamingExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/SparkKafkaForEachBatchSinkExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/custom/CustomBatchWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/partitioner/CustomMapPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/query/CustomQueryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/ui/SparkUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/SparkKafkaStucturedStreamingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/SparkKafkaStucturedStreamingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/WordCountStucturedStreaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spark/streaming/WordCountStucturedStreaming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spark/streaming/SparkKafkaStucturedStreamingExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spark/streaming/SparkKafkaStucturedStreamingExample.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -17,27 +35,68 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sachinzinjurke&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sachinzinjurke/spark-kafka-stucrured-streaming.git&quot;,
+    &quot;accountId&quot;: &quot;711d9a1d-0375-4d9b-ab3e-463e06f0f58d&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="206vVsWZsjPG4kbOUOJTuyChR4L" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/interview-workspace/sping-jwt-authentication&quot;
+  }
+}</component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.spark.streaming" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.spark.streaming.custom" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\spark-projects\spark-kafka-stucrured-streaming\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.spark.streaming" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SparkKafkaStucturedStreamingExample">
-    <configuration name="ScemaReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spark.streaming.ScemaReader" />
+  <component name="RunManager" selected="Application.SparkKafkaForEachBatchSinkExample">
+    <configuration name="KafkaWindowStreamingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spark.streaming.KafkaWindowStreamingExample" />
+      <module name="spark-kafka-stucrured-streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spark.streaming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkKafkaForEachBatchSinkExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spark.streaming.SparkKafkaForEachBatchSinkExample" />
       <module name="spark-kafka-stucrured-streaming" />
       <extension name="coverage">
         <pattern>
@@ -62,13 +121,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SparkUi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spark.ui.SparkUi" />
+      <module name="spark-kafka-stucrured-streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spark.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountStucturedStreaming" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spark.streaming.WordCountStucturedStreaming" />
+      <module name="spark-kafka-stucrured-streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spark.streaming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SparkKafkaForEachBatchSinkExample" />
+      <item itemvalue="Application.KafkaWindowStreamingExample" />
+      <item itemvalue="Application.SparkUi" />
+      <item itemvalue="Application.WordCountStucturedStreaming" />
+      <item itemvalue="Application.SparkKafkaStucturedStreamingExample" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparkKafkaForEachBatchSinkExample" />
+        <item itemvalue="Application.KafkaWindowStreamingExample" />
         <item itemvalue="Application.SparkKafkaStucturedStreamingExample" />
-        <item itemvalue="Application.ScemaReader" />
+        <item itemvalue="Application.SparkUi" />
+        <item itemvalue="Application.WordCountStucturedStreaming" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -80,36 +176,25 @@
       <option name="presentableId" value="Default" />
       <updated>1635377878953</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding working example for spark stuctured streaming with local kafka set up .. set up instructions are in read me file">
+      <created>1745443645546</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745443645546</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding working example for spark stuctured streaming with local kafka set up .. set up instructions are in read me file">
+      <created>1745443895195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745443895195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="396" y="145" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1635378003794">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="396" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1635378003794" />
-    <state x="421" y="59" key="FileChooserDialogImpl" timestamp="1635380844124">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="59" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1635380844124" />
-    <state width="1237" height="270" key="GridCell.Tab.0.bottom" timestamp="1635397423894">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1635397423894" />
-    <state width="1237" height="270" key="GridCell.Tab.0.center" timestamp="1635397423894">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1635397423894" />
-    <state width="1237" height="270" key="GridCell.Tab.0.left" timestamp="1635397423893">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1635397423893" />
-    <state width="1237" height="270" key="GridCell.Tab.0.right" timestamp="1635397423894">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1635397423894" />
-    <state x="316" y="41" key="NewModule_or_Project.wizard" timestamp="1635380320345">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="316" y="41" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1635380320345" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding working example for spark stuctured streaming with local kafka set up .. set up instructions are in read me file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding working example for spark stuctured streaming with local kafka set up .. set up instructions are in read me file" />
   </component>
 </project>

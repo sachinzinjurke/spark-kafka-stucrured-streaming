@@ -33,8 +33,9 @@ public class WordCountStucturedStreaming {
                 .option("startingOffsets", "latest") // From starting
                 .load();
 
+        rawData.printSchema();
         Dataset<Row> lines = rawData.selectExpr("CAST(value AS STRING)");
-
+        lines.printSchema();
         // Split the lines into words
         Dataset<String> words = lines
                 .as(Encoders.STRING())
